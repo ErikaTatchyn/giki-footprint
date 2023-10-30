@@ -1,0 +1,70 @@
+.purpleCloud {
+  height: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.leafIconSlim {
+  position: absolute;
+  width: 57px;
+  height: auto;
+  z-index: 2;
+  top: -108px;
+  right: 41px;
+}
+
+.leafIconWide {
+  position: absolute;
+  width: 86px;
+  height: auto;
+  z-index: 2;
+  top: 78px;
+  right: 272px;
+  transform: rotate(180deg);
+}
+
+.leafIconWideBottom {
+  position: absolute;
+  width: 79px;
+  height: auto;
+  z-index: 2;
+  top: -74px;
+  left: 280px;
+}
+
+.leafIconSlimBottom {
+  position: absolute;
+  width: 57px;
+  height: auto;
+  z-index: 2;
+  top: 90px;
+  left: 46px;
+  transform: rotate(180deg);
+}
+
+.whiteCloud {
+  height: auto;
+  position: absolute;
+  width: 87%;
+  z-index: 3;
+}
+
+.butterfly {
+  position: absolute;
+  top: -85px;
+  left: 23px;
+  width: 67px;
+  height: 55px;
+  z-index: 4;
+}
+
+.carbonEmissionsUnit {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.buttonText {
+  color: #fff;
+  font-weight: 600;
+}

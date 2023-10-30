@@ -47,8 +47,9 @@ const EstimationInfo: React.FC<EstimationInfoProps> = ({
           }}
         >
           {endOfYearTarget}
-          <span
-            style={{
+          <Typography
+            component="span"
+            sx={{
               fontSize: "0.875rem",
               lineHeight: "150%",
               fontWeight: 700,
@@ -56,7 +57,7 @@ const EstimationInfo: React.FC<EstimationInfoProps> = ({
           >
             {" "}
             kg
-          </span>
+          </Typography>
         </Typography>
         <Typography
           color="primary"
@@ -90,8 +91,9 @@ const EstimationInfo: React.FC<EstimationInfoProps> = ({
           }}
         >
           {leftToCut}
-          <span
-            style={{
+          <Typography
+            component="span"
+            sx={{
               fontSize: "0.875rem",
               lineHeight: "150%",
               fontWeight: 700,
@@ -99,7 +101,7 @@ const EstimationInfo: React.FC<EstimationInfoProps> = ({
           >
             {" "}
             kg
-          </span>
+          </Typography>
         </Typography>
         <Typography
           color="primary"

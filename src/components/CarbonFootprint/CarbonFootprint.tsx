@@ -5,6 +5,7 @@ import whiteCloudImage from "../../assets/white_cloud.png";
 import butterflyImage from "../../assets/butterfly.svg";
 import leaf1Image from "../../assets/leaf1.svg";
 import leaf2Image from "../../assets/leaft2.svg";
+import styles from "./CarbonFootprint.module.css";
 
 interface CarbonFootprintProps {
   footprintValue: string;
@@ -28,85 +29,38 @@ const CarbonFootprint: React.FC<CarbonFootprintProps> = ({
         <img
           src={purpleCloudImage}
           alt="Purple Cloud"
-          style={{
-            height: "auto",
-            position: "absolute",
-            width: "100%",
-            zIndex: 1,
-          }}
+          className={styles.purpleCloud}
         />
         <img
           src={leaf1Image}
           alt="Leaf Icon Slim"
-          style={{
-            position: "absolute",
-            width: "57px",
-            height: "auto",
-            zIndex: 2,
-            top: -108,
-            right: 41,
-          }}
+          className={styles.leafIconSlim}
         />
         <img
           src={leaf2Image}
           alt="Leaf Icon Wide"
-          style={{
-            position: "absolute",
-            width: 86,
-            height: "auto",
-            zIndex: 2,
-            top: 78,
-            right: 272,
-            transform: "rotate(180deg)",
-          }}
+          className={styles.leafIconWide}
         />
 
         <img
           src={leaf2Image}
           alt="Leaf Icon Wide"
-          style={{
-            position: "absolute",
-            width: "79px",
-            height: "auto",
-            zIndex: 2,
-            top: -74,
-            left: 280,
-          }}
+          className={styles.leafIconWideBottom}
         />
         <img
           src={leaf1Image}
           alt="Leaf Icon Slim"
-          style={{
-            position: "absolute",
-            width: "57px",
-            height: "auto",
-            zIndex: 2,
-            top: 90,
-            left: 46,
-            transform: "rotate(180deg)",
-          }}
+          className={styles.leafIconSlimBottom}
         />
         <img
           src={whiteCloudImage}
           alt="White Cloud"
-          style={{
-            height: "auto",
-            position: "absolute",
-            width: "87%",
-            zIndex: 3,
-          }}
+          className={styles.whiteCloud}
         />
         <img
           src={butterflyImage}
           alt="Butterfly"
-          style={{
-            position: "absolute",
-            top: "-85px",
-            left: "23px",
-            width: "67px",
-            height: "55px",
-            zIndex: 4,
-          }}
+          className={styles.butterfly}
         />
         <Box
           sx={{ position: "absolute", textAlign: "center", zIndex: 5, mt: 3 }}
@@ -129,15 +83,7 @@ const CarbonFootprint: React.FC<CarbonFootprintProps> = ({
             }}
           >
             {footprintValue}
-            <span
-              style={{
-                fontWeight: "bold",
-                fontSize: "1rem",
-              }}
-            >
-              {" "}
-              kg
-            </span>
+            <span className={styles.carbonEmissionsUnit}> kg</span>
           </Typography>
           <Typography
             sx={{
@@ -169,14 +115,7 @@ const CarbonFootprint: React.FC<CarbonFootprintProps> = ({
               },
             }}
           >
-            <span
-              style={{
-                color: "#fff",
-                fontWeight: 600,
-              }}
-            >
-              Take a step
-            </span>
+            <span className={styles.buttonText}>Take a step</span>
           </Button>
         </Box>
       </Box>
